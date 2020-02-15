@@ -21,6 +21,15 @@ x0 = int(x);
 # Print do valor aproximado de X
 print("Valor para X0 = {}" .format(x0));
 
+######################################################################### 
+#                                                                       #
+#          Funções para calcular a f(x), f'(x) e T(x) onde:             #    
+#                                                                       #
+#                         f'(x) é a derivada;                           #
+#          T(x) e função que descreve a reta tangente ao ponto X0       #
+#                                                                       # 
+#########################################################################
+
 # Função para calcular a raiz quadrada
 def raizQuadrada(x):
     pass;
@@ -39,6 +48,7 @@ def calculaDerivadaX(variableX0):
 def calculaRetaTangenteX(variableX0, variableX):
     return float(calculaFuncaoX(variableX0) + (calculaDerivadaX(variableX0) * (variableX-variableX0)));
 
+# Imprimi o resultado da aproximação
 print("Valor aproximado = {}" .format(float(calculaRetaTangenteX(x0,x))));
 
 
