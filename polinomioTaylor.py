@@ -48,7 +48,7 @@ def calculaDerivadaX(variableX0):
 def calculaRetaTangenteX(variableX0, variableX):
     return float(calculaFuncaoX(variableX0) + (calculaDerivadaX(variableX0) * (variableX-variableX0)));
 
-# Imprimi o resultado da aproximação
+# Imprime o resultado da aproximação
 print("Valor aproximado = {}" .format(float(calculaRetaTangenteX(x0,x))));
 
 
