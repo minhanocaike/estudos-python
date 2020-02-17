@@ -56,8 +56,10 @@ def calculaDerivadaX():
 def calculaRetaTangenteX(variableX0, variableX):
     return float(calculaFuncaoX() + (calculaDerivadaX() * (variableX-variableX0)))
 
-# Imprime o resultado da aproximação
-print("Valor aproximado = {}" .format(float(calculaRetaTangenteX(x0,x))))
+
+# Atribui o valor de retorno da função da reta tangente e imprimi na tela
+resultAproximacao = float(calculaRetaTangenteX(x0,x))
+print("Valor aproximado = {}" .format(resultAproximacao))
 
 ######################################################################### 
 #                                                                       #
@@ -71,9 +73,10 @@ print("Valor aproximado = {}" .format(float(calculaRetaTangenteX(x0,x))))
 ##
 # Função para calcular o quadrado da da diferença dos dois pontos
 ##
-def estimativaErro(variableX0,variableX):
-    pass
+def estimativaErro(variableX0,variableX): #TODO
+    return 0
 
-
-
+# Atribui o valor de retorno da função de calculo da estimativa de erro e imprimi na tela
+resultEstimativaErro = estimativaErro(x0,x) #TODO
+print("Valor aproximado = {}" .format(resultEstimativaErro)) #TODO
 
