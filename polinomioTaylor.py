@@ -15,7 +15,7 @@
 # Variável x que será inputada pelo usuário
 x = float(input("Digite o valor da variavel a ser aproximada:\n"))
 
-# Variável que irá receber o valor aproximado de x para base de aproximacação
+# Variável que irá receber o valor aproximado de x para base de aproximacação (arredondando para o int conhecido mais proximo)
 x0 = int(x)
 
 # Print do valor aproximado de X
@@ -37,17 +37,17 @@ def raizQuadrada(variableX):
             return i
 
 # Atribui o valor da raiz de X0 à variável raiz
-raiz = raizQuadrada(x0)
+raizX0 = raizQuadrada(x0)
 
 # Função de F(x)
 def calculaFuncaoX():
     #print("Raiz de X0 = {}".format(math.sqrt(variableX0)));
-    return raiz
+    return raizX0
 
 # Função de F'(X)
 def calculaDerivadaX():
     #print("Deriva de X0 = {}".format((1/(2 * math.sqrt(variableX0)))));
-    return float(1/(2 * raiz))
+    return float(1/(2 * raizX0))
 
 ##
 # Função para calcular a reta Tangente de x, T(x)
@@ -74,9 +74,9 @@ print("Valor aproximado = {}" .format(resultAproximacao))
 # Função para calcular o quadrado da da diferença dos dois pontos
 ##
 def estimativaErro(variableX0,variableX): #TODO
-    return 0
+    return 0 #TODO
 
 # Atribui o valor de retorno da função de calculo da estimativa de erro e imprimi na tela
 resultEstimativaErro = estimativaErro(x0,x) #TODO
-print("Valor aproximado = {}" .format(resultEstimativaErro)) #TODO
+print("Erro estimado entre = {}" .format(resultEstimativaErro)) #TODO
 
